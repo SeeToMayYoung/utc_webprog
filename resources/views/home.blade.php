@@ -38,7 +38,7 @@
                 <!-- Carousel wrapper -->
                 <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
                     @foreach($posts as $post)
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <div class="hidden duration-700 ease-in-out flex flex-col items-center" data-carousel-item>
                             <img class="h-72 w-auto" src="{{$post->thumbnail_image}}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                             <h2 class="text-white font-bold text-3xl my-4">{{$post->title}}</h2>
                             <a class="" href="/detail/{{$post->id}}">
